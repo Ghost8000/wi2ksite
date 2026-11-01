@@ -2,7 +2,6 @@
 <!-- saved from=(0014)about:internet -->
 <html>
 <head>
-<base href="https://github.io">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Retro IE6 Video Player - visiting a good old site in windows 2000!</title>
 <style type="text/css">
@@ -36,26 +35,21 @@ a:hover { color: #ff0000; }
           <td class="titlebar">
             <font size="3">Windows Media Player - Playlist Item 1</font>
           </td>
-<object id="MediaPlayer" 
-        classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6" 
-        type="application/x-oleobject"
-        width="400" 
-        height="400">
-    
-    <param name="url" value="video1.asf">
-    <param name="src" value="video1.asf">
+<object id="MediaPlayer" classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6" type="application/x-oleobject" width="400" height="400">
+    <!-- Changed to unencrypted http protocol to allow WMP9 to connect -->
+    <param name="url" value="http://github.io">
+    <param name="src" value="http://github.io">
     <param name="autoStart" value="true">
     <param name="uiMode" value="full">
 
     <embed type="application/x-mplayer2" 
-           src="video1.asf" 
+           src="http://github.io" 
            width="400" 
            height="400" 
            autostart="1" 
            showcontrols="1">
     </embed>
 </object>
-
                 </td>
               </tr>
             </table>
