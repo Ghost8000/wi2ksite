@@ -35,19 +35,28 @@ a:hover { color: #ff0000; }
           <td class="titlebar">
             <font size="3">Windows Media Player - Playlist Item 1</font>
           </td>
-<object id="MediaPlayer" classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6" type="application/x-oleobject" width="400" height="400">
-    <!-- Changed to unencrypted http protocol to allow WMP9 to connect -->
-    <param name="url" value="http://github.io">
-    <param name="src" value="http://github.io">
+<object id="MediaPlayer" 
+        classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6" 
+        type="application/x-oleobject"
+        width="400" 
+        height="400"
+        standby="Loading Windows Media Player Component...">
+    
+    <param name="url" value="https://github.io">
+    <param name="src" value="https://github.io">
     <param name="autoStart" value="true">
     <param name="uiMode" value="full">
+    <param name="stretchToFit" value="true">
+    <param name="enableContextMenu" value="true">
 
     <embed type="application/x-mplayer2" 
-           src="http://github.io" 
+           src="https://github.io" 
            width="400" 
            height="400" 
            autostart="1" 
-           showcontrols="1">
+           showcontrols="1" 
+           showstatusbar="1"
+           stretchtofit="1">
     </embed>
 </object>
                 </td>
