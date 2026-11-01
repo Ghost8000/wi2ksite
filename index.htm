@@ -35,20 +35,35 @@ a:hover { color: #ff0000; }
           <td class="titlebar">
             <font size="3">Windows Media Player - Playlist Item 1</font>
           </td>
-    <object id="MediaPlayer" classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" width="400" height="400">
-        <param name="url" value="https://ghost8000.github.io/wi2ksite/video1.avi">
-        <param name="autoStart" value="true">
-        <param name="uiMode" value="full">
+<object id="MediaPlayer" 
+        classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" 
+        width="400" 
+        height="400" 
+        standby="Loading Windows Media Player 9 Series Components...">
     
-    <!-- This inner tag intercepts K-Meleon 74 / NPAPI browsers -->
-            <embed type="application/x-mplayer2" 
-               src="https://ghost8000.github.io/wi2ksite/video1.avi" 
-               width="400" 
-               height="400" 
-               autostart="1" 
-               showcontrols="1">
-            </embed>
-        </object>
+    <!-- Strict Windows Media Player 7/9 ActiveX Parameters -->
+    <param name="url" value="https://github.io">
+    <param name="autoStart" value="true">
+    <param name="uiMode" value="full">
+    <param name="stretchToFit" value="true">
+    <param name="enableContextMenu" value="true">
+    <param name="balance" value="0">
+    <param name="volume" value="100">
+
+    <!-- Strict Netscape/NPAPI Plugin Fallback for K-Meleon 74 -->
+    <embed type="application/x-mplayer2" 
+           src="https://github.io" 
+           width="400" 
+           height="400" 
+           autostart="1" 
+           uiMode="full"
+           showcontrols="1" 
+           showstatusbar="1"
+           showdisplay="0"
+           stretchtofit="1">
+    </embed>
+</object>
+
                 </td>
               </tr>
             </table>
