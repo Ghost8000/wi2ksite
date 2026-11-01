@@ -36,34 +36,31 @@ a:hover { color: #ff0000; }
             <font size="3">Windows Media Player - Playlist Item 1</font>
           </td>
 <object id="MediaPlayer" 
-        classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" 
+        type="application/x-mplayer2" 
+        data="https://github.io" 
         width="400" 
-        height="400" 
-        standby="Loading Windows Media Player 9 Series Components...">
+        height="400">
     
-    <!-- Strict Windows Media Player 7/9 ActiveX Parameters -->
-    <param name="url" value="https://github.io">
-    <param name="autoStart" value="true">
+    <!-- Unified WMP9 Plugin Parameters -->
+    <param name="src" value="https://github.io">
+    <param name="autostart" value="true">
     <param name="uiMode" value="full">
-    <param name="stretchToFit" value="true">
-    <param name="enableContextMenu" value="true">
-    <param name="balance" value="0">
-    <param name="volume" value="100">
+    <param name="showcontrols" value="1">
+    <param name="showstatusbar" value="1">
+    <param name="stretchtofit" value="1">
+    <param name="enablecontextmenu" value="1">
 
-    <!-- Strict Netscape/NPAPI Plugin Fallback for K-Meleon 74 -->
+    <!-- Deep Fallback for Strict Non-Standard Frameworks -->
     <embed type="application/x-mplayer2" 
            src="https://github.io" 
            width="400" 
            height="400" 
            autostart="1" 
-           uiMode="full"
            showcontrols="1" 
            showstatusbar="1"
-           showdisplay="0"
            stretchtofit="1">
     </embed>
 </object>
-
                 </td>
               </tr>
             </table>
