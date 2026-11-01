@@ -42,23 +42,21 @@ a:hover { color: #ff0000; }
             <table border="1" cellpadding="0" cellspacing="0" bgcolor="#000000" style="border-style: inset;">
               <tr>
                 <td>
-                  <object id="MediaPlayer" 
-                          classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95" 
-                          codebase="http://microsoft.com" 
-                          width="480" 
-                          height="400" 
-                          type="application/x-oleobject">
-                    <param name="FileName" value="video1.avi">
-                    <param name="AutoStart" value="true">
-                    <param name="ShowControls" value="true">
-                    <param name="ShowStatusBar" value="true">
-                    <param name="ShowDisplay" value="false">
-                    
-                    <p style="color:#ffffff; padding:20px;">
-                      Error: The Windows Media Player ActiveX control failed to load.<br>
-                      Ensure you are viewing this page inside Internet Explorer 6 with ActiveX enabled.
-                    </p>
-                  </object>
+<object id="MediaPlayer" classid="6BF52A52-394A-11D3-B153-00C04F79FAA6" width="400" height="400">
+    <param name="url" value="video1.avi">
+    <param name="autoStart" value="true">
+    <param name="uiMode" value="full">
+    
+    <!-- This inner tag intercepts K-Meleon / NPAPI browsers -->
+    <embed type="application/x-mplayer2" 
+           src="video1.avi" 
+           width="400" 
+           height="400" 
+           autostart="1" 
+           showcontrols="1">
+    </embed>
+</object>
+
                 </td>
               </tr>
             </table>
