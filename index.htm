@@ -36,36 +36,34 @@ a:hover { color: #ff0000; }
           <td class="titlebar">
             <font size="3">Windows Media Player - Playlist Item 1</font>
           </td>
-<object id="MediaPlayer" 
-        classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6" 
-        type="application/x-oleobject"
-        width="400" 
-        height="400"
-        standby="Loading Windows Media Player Component...">
-    
-<object id="MediaPlayer" type="application/x-mplayer2" data="https://ghost8000.github.io/" width="400" height="400">
-    <!-- Media Parameters for Windows Media Player Subsystem -->
-    <param name="src" value="https://ghost8000.github.io/wi2ksite/video1.wmv">
-    <param name="autoStart" value="true">
-    <param name="uiMode" value="full">
-    <param name="showcontrols" value="1">
-    <param name="showstatusbar" value="1">
-    <param name="showtracker" value="1">
-    <param name="showaudiocontrols" value="1">
-    <param name="stretchtofit" value="1">
+<object
+ id="WMP"
+ classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6"
+ width="640"
+ height="500">
 
-    <!-- Netscape Plugin Safety Intercept Tag -->
-<embed type="application/x-mplayer2" 
-   src="video1.wmv" 
-   width="400" 
-   height="400" 
-   autostart="true" 
-   showcontrols="1" 
-   showstatusbar="1" 
-   showtracker="1" 
-   showaudiocontrols="1" 
-   stretchtofit="true">
-</embed>
+ <param name="URL" value="http://www.example.com/video.wmv">
+ <param name="AutoStart" value="false">
+ <param name="uiMode" value="full">
+ <param name="PlayCount" value="1">
+ <param name="stretchToFit" value="true">
+ <param name="EnableContextMenu" value="true">
+ <param name="ShowStatusBar" value="true">
+
+ <embed
+  type="application/x-mplayer2"
+  pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"
+  src="http://www.example.com/video.wmv"
+  name="WMP"
+  width="640"
+  height="500"
+  autostart="false"
+  uimode="full"
+  playcount="1"
+  stretchtofit="true"
+  showstatusbar="true">
+ </embed>
+
 </object>
                 </td>
               </tr>
