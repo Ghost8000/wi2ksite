@@ -2,6 +2,7 @@
 <!-- saved from=(0014)about:internet -->
 <html>
 <head>
+<base href="https://github.io">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Retro IE6 Video Player - visiting a good old site in windows 2000!</title>
 <style type="text/css">
@@ -36,31 +37,25 @@ a:hover { color: #ff0000; }
             <font size="3">Windows Media Player - Playlist Item 1</font>
           </td>
 <object id="MediaPlayer" 
-        type="application/x-mplayer2" 
-        data="https://github.io" 
+        classid="CLSID:6BF52A52-394A-11D3-B153-00C04F79FAA6" 
+        type="application/x-oleobject"
         width="400" 
         height="400">
     
-    <!-- Unified WMP9 Plugin Parameters -->
-    <param name="src" value="https://github.io">
-    <param name="autostart" value="true">
+    <param name="url" value="video1.avi">
+    <param name="src" value="video1.avi">
+    <param name="autoStart" value="true">
     <param name="uiMode" value="full">
-    <param name="showcontrols" value="1">
-    <param name="showstatusbar" value="1">
-    <param name="stretchtofit" value="1">
-    <param name="enablecontextmenu" value="1">
 
-    <!-- Deep Fallback for Strict Non-Standard Frameworks -->
     <embed type="application/x-mplayer2" 
-           src="https://github.io" 
+           src="video1.avi" 
            width="400" 
            height="400" 
            autostart="1" 
-           showcontrols="1" 
-           showstatusbar="1"
-           stretchtofit="1">
+           showcontrols="1">
     </embed>
 </object>
+
                 </td>
               </tr>
             </table>
